@@ -12,7 +12,6 @@ def grab_code_from_page(page_url, ip_address="0"):
     :returns: string formatted source code
     """
 
-    # print("In code grabber")
     # Acting as mozilla browser while requesting data from server
     user_agent = "Mozilla/5.0 (X11; U; Linux i686) Gecko/20071127 Firefox/2.0.0.11"
 
@@ -28,7 +27,7 @@ def grab_code_from_page(page_url, ip_address="0"):
             response.close()
             return response.text
         else:
-            print("Error {} this is".format(response.status_code))
+            print("Error {} occurred".format(response.status_code))
             log_file = open("logs.txt", 'a')
             log_file.write("\nError {} while retrieving {}\n".format(response.status_code, page_url))
             log_file.close()
