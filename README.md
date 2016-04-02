@@ -5,7 +5,7 @@
 * Works with authenticated proxy
 * Fetches all the reviews of ALL the mobile phones available
 * Record logs to capture errors
-* Manages directories by itself (Automatic cleaning up of files when execution starts)
+* Manages directories by itself (Automatic cleaning up of files when execution starts)u
 
 #### Requirements:
 * Python 3.4+
